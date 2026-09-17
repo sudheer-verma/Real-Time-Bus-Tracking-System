@@ -11,7 +11,7 @@ const RouteDetailsPage = () => {
     const loadRoute = async () => {
       try {
         setLoading(true);
-        const response = await api.get(`/passengers/routes/${routeId}`);
+        const response = await api.get(`/passenger/routes/${routeId}`);
         setRoute(response.route || response);
       } catch (error) {
         console.error(error);

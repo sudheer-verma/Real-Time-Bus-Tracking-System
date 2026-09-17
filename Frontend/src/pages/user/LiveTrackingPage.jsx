@@ -19,8 +19,8 @@ const LiveTrackingPage = () => {
       try {
         setLoading(true);
         const [busResponse, etaResponse] = await Promise.all([
-          api.get(`/passengers/buses/${busId}/live`),
-          api.get(`/passengers/buses/${busId}/eta`),
+          api.get(`/passenger/buses/${busId}/live`),
+          api.get(`/passenger/buses/${busId}/eta`),
         ]);
 
         const routeData = busResponse.bus?.route || null;

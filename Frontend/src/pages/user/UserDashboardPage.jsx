@@ -20,8 +20,8 @@ const UserDashboardPage = () => {
       try {
         setLoading(true);
         const [busResponse, routeResponse] = await Promise.all([
-          api.get('/passengers/buses'),
-          api.get('/passengers/routes'),
+          api.get('/passenger/buses'),
+          api.get('/passenger/routes'),
         ]);
         setBuses(busResponse.buses || []);
         setRoutes(routeResponse.routes || []);

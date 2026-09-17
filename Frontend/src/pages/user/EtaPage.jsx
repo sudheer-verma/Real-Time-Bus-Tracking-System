@@ -11,7 +11,7 @@ const EtaPage = () => {
     const loadEta = async () => {
       try {
         setLoading(true);
-        const response = await api.get(`/passengers/buses/${busId}/eta`);
+        const response = await api.get(`/passenger/buses/${busId}/eta`);
         setEta(response);
       } catch (error) {
         console.error(error);

@@ -14,7 +14,7 @@ const BusListPage = () => {
     const loadBuses = async () => {
       try {
         setLoading(true);
-        const response = await api.get('/passengers/buses');
+        const response = await api.get('/passenger/buses');
         setBuses(response.buses || []);
       } catch (err) {
         console.error(err);

@@ -12,7 +12,7 @@ const RoutesPage = () => {
     const loadRoutes = async () => {
       try {
         setLoading(true);
-        const response = await api.get('/passengers/routes');
+        const response = await api.get('/passenger/routes');
         setRoutes(response.routes || []);
       } catch (error) {
         console.error(error);
